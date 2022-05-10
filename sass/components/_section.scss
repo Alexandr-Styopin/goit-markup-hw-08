@@ -1,0 +1,9 @@
+.section {
+  @extend %section;
+}
+
+.section__list {
+  display: flex;
+  margin-top: 50px;
+  gap: 30px;
+}

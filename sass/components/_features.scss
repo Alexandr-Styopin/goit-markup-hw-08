@@ -1,0 +1,40 @@
+.features {
+  padding-top: 94px;
+}
+
+.features__list {
+  display: flex;
+  gap: 30px;
+
+}
+
+.features__item {
+  width: 270px;
+}
+
+.features__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: $color_secondary_bg;
+}
+
+.features__subtitle {
+  padding-top: 30px;
+  @include font (700);
+  text-transform: uppercase;
+  color: $color_title;
+}
+
+.features__text {
+  margin-top: 10px;
+
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  white-space: normal;
+
+  color: $color_primary_text;
+}

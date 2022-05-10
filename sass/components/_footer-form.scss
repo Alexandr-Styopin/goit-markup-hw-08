@@ -1,0 +1,64 @@
+.footer-form {
+    margin-left: 93px;
+}
+
+.footer-form__wrap {
+    display: flex;
+}
+
+.footer-form__field {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-form__label {
+    padding-top: 12px;
+    margin-bottom: 20px;
+    @include font (700);
+    text-transform: uppercase;
+    color: $color_secondary_text;
+}
+
+.footer-form__input {
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+
+    background-color: $color_footer_bg;
+    border: 1px solid $color_footer_form_border;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: transparent;
+    color: $color_secondary_text;
+
+    font-family: $font_primary;
+    font-style: normal;
+    @include font (null, 16px, 1.25);
+
+    transition: border-color 250ms $CubicBezier;
+
+    &:focus {
+        border-color: $color_accent;
+    }
+
+    &::placeholder {
+        @include font (null, 16px, 1.25);
+
+        color: $color_footer_form_placeholder;
+    }
+}
+
+.footer-form__button-wrap {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 12px;
+}
+
+.footer-button {
+    @extend %button;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.footer-button__icon {
+    margin-left: 10px;
+}

@@ -1,0 +1,15 @@
+.header {
+  border: 1px rgba(236, 236, 236, 1);
+  border-style: none none solid none;
+  background-color: $color_primary_bg;
+}
+
+.header__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo {
+  color: $color_header_logo;
+}

@@ -1,0 +1,41 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $color_footer_bg;
+
+  .footer__wrap {
+    display: inline-flex;
+  }
+}
+
+.footer-column__wrap {
+  display: block;
+}
+
+.footer-logo {
+  color: $color_footer_logo;
+}
+
+.footer-address {
+  margin-top: 20px;
+
+  font-style: normal;
+  line-height: 1.7;
+  color: $color_secondary_text;
+}
+
+.footer-contact__item {
+  padding-top: 9px;
+}
+
+.footer-contact__link {
+  line-height: 1.7;
+  color: $color_footer_text;
+  transition: color 250ms $CubicBezier;
+
+  &:hover,
+  &:focus {
+    color: $color_accent;
+  }
+}

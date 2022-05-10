@@ -1,0 +1,26 @@
+.clients__link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid $color_primary_icons;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: border-color 250ms $CubicBezier;
+
+  &:hover,
+  &:focus {
+    border-color: $color_accent;
+  }
+}
+
+.clients__logo {
+  fill: $color_primary_icons;
+  transition: fill 250ms $CubicBezier;
+}
+
+.clients__link:hover .clients__logo,
+.clients__link:focus .clients__logo {
+  fill: $color_accent;
+}
