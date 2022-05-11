@@ -1,22 +1,60 @@
 .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    width: 100%;
     background-color: $color_secondary_bg;
 }
 
 .team__list {
-    display: flex;
-    gap: 30px;
-    text-align: center;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 50px;
+    }
 }
 
 .team__item {
+    margin-top: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    ////768px___TABLET///////////
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
+
+    }
+
+    ////1200px___DESCTOP//////////
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 4 * 30px) / 4);
+        margin: 15px;
+    }
+}
+
+.team__img {
+    @media screen and (max-width: 768px) {
+        width: 450px;
+        height: 460px;
+    }
+
+
+    @media screen and (max-width: 1200px) {
+        width: 354px;
+        height: 374px;
+    }
 }
 
 .team__mata {
     padding-top: 30px;
     padding-bottom: 30px;
     border-radius: 0px 0px 4px 4px;
+    text-align: center;
     background-color: $color_card_bg;
 }
 
