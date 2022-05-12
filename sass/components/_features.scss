@@ -1,14 +1,4 @@
-.features {
-  // padding-top: 94px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 .features__list {
-  // background-color: teal;
-  margin-left: auto;
-  margin-right: auto;
-
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -18,23 +8,17 @@
 }
 
 .features__item {
+  margin-top: 30px;
+
   background-color: $color_primary_bg;
   width: 100%;
 
-  @media screen and (max-width: 768px) {
-    &:not(:first-child) {
-      margin-top: 30px;
-    }
-  }
-
-  ////768px___TABLET///////////
   @media screen and (min-width: 768px) {
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
 
   }
 
-  ////1200px___DESCTOP//////////
   @media screen and (min-width: 1200px) {
     width: calc((100% - 4 * 30px) / 4);
     margin: 15px;
