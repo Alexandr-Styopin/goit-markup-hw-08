@@ -1,6 +1,48 @@
+////////////////////FONTS///////////////////
 @mixin font ($fw: 400, $fs: 14px, $lh: 1.14, $ls: 0.03em) {
     font-weight: $fw;
     font-size: $fs;
     line-height: $lh;
     letter-spacing: $ls;
+}
+
+/////////////////BREAKING POINT/////////////
+
+////////480px
+@mixin point-mobile-min {
+    @media screen and (min-width: 480px) {
+        @content;
+    }
+}
+
+@mixin point-mobile-max {
+    @media (max-width: 480px) {
+        @content;
+    }
+}
+
+///////768px
+@mixin point-tablet-min {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin point-tablet-max {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+//////1200px
+@mixin point-desktop-min {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin point-desktop-max {
+    @media (max-width: 1200px) {
+        @content;
+    }
 }

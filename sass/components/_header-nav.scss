@@ -1,19 +1,19 @@
-.nav-menu {
+.header-nav {
   display: flex;
   align-items: center;
 
 }
 
-.nav-menu__list {
+.header-nav__list {
   display: flex;
   margin-left: 93px;
 }
 
-.nav-menu__item:not(:first-child) {
+.header-nav__item:not(:first-child) {
   margin-left: 50px;
 }
 
-.nav-menu__link {
+.header-nav__link {
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;

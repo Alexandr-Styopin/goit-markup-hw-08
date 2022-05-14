@@ -1,7 +1,13 @@
 .filter__list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px 8px;
+
+  @include point-tablet-min {
+    justify-content: center;
+  }
 }
+
 
 .filter__button {
   padding: 6px 22px;
@@ -28,6 +34,6 @@
   }
 }
 
-.filter__iteam:not(:first-child) {
-  margin-left: 8px;
-}
+// .filter__iteam:not(:first-child) {
+//   margin-left: 8px;
+// }

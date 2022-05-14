@@ -10,6 +10,13 @@
   justify-content: center;
 }
 
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header-logo {
   color: $color_header_logo;
 }

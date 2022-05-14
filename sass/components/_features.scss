@@ -1,5 +1,5 @@
 .features__list {
-  @media screen and (min-width: 768px) {
+  @include point-tablet-min {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
@@ -13,13 +13,13 @@
   background-color: $color_primary_bg;
   width: 100%;
 
-  @media screen and (min-width: 768px) {
+  @include point-tablet-min {
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
 
   }
 
-  @media screen and (min-width: 1200px) {
+  @include point-desktop-min {
     width: calc((100% - 4 * 30px) / 4);
     margin: 15px;
   }
@@ -42,7 +42,7 @@
   text-transform: uppercase;
   color: $color_title;
 
-  @media screen and (max-width: 768px) {
+  @include point-tablet-max {
     text-align: center;
   }
 }

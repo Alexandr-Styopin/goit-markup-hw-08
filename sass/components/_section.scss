@@ -1,7 +1,7 @@
 .section {
   @extend %section;
 
-  @media screen and (min-width: 1200px) {
+  @include point-desktop-min {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -10,7 +10,7 @@
 .section__list {
   margin-top: 30px;
 
-  @media screen and (min-width: 1200px) {
+  @include point-desktop-min {
     margin-top: 50px;
   }
 
