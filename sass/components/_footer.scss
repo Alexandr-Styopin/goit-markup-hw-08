@@ -1,12 +1,12 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-
   background-color: $color_footer_bg;
-
 }
 
 .footer__wrap {
+
+
   @include point-desktop-min {
     display: inline-flex;
   }

@@ -164,7 +164,18 @@
             <li class="examples__item">
               <a href="" class="examples__link link">
                 <div class="examples__thumb">
-                  <img class="examples__img" src="./images/project-img5.jpg" alt="Технокряк" width="370" height="294" />
+                  <picture>
+                    <source srcset="
+                      ./images/examples/examples_1-desktop-1x-min 1x.jpg, 
+                      ./images/examples/examples_1-desktop-2x-min 2x.jpg" media="(min-width: 1200px)" />
+                    <source srcset="
+                      ./images/examples/examples_1-tab-1x-min 1x.jpg, 
+                      ./images/examples/examples_1-tab-2x-min 2x.jpg" media="(min-width: 768px)" />
+                    <source srcset="
+                      ./images/examples/examples_1-mob-1x-min 1x.jpg, 
+                      ./images/examples/examples_1-mob-2x-min 2x.jpg" media="(min-width: 480px)" />
+                    <img class="examples__img" src="./images/examples/examples_1-mob-1x-min.jpg" alt="Технокряк" />
+                  </picture>
                   <div class="examples__overlay">
                     <p class="examples__text">
                       Ресурс предлагает комплексные предложения с разным уровнем

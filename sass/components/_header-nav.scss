@@ -5,6 +5,10 @@
   @include point-tablet-max {
     display: none;
   }
+
+  @include point-desktop-min {
+    margin-left: 93px;
+  }
 }
 
 .header-nav__list {

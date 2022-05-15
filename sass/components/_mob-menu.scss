@@ -2,14 +2,19 @@
     position: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    min-width: 320px;
+    // justify-content: space-between;
 
     padding: 48px 15px 48px 40px;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    // min-width: 320px;
+
+
     background-color: $color_primary_bg;
 
     transform: translateX(100%);
@@ -65,6 +70,10 @@
     &:focus {
         color: $color_accent;
     }
+}
+
+.menu-bottom {
+    margin-top: auto;
 }
 
 .menu-contacts {
