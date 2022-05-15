@@ -1,25 +1,37 @@
 .header-contacts {
-  display: flex;
-  margin-left: auto;
+  @include point-tablet-max {
+    display: none;
+  }
 
+  @include point-desktop-min {
+    display: flex;
+
+  }
 }
 
 .header-contacts__list {
   display: flex;
+
+  @include point-desktop-max {
+    flex-direction: column;
+  }
 }
 
 .header-contacts__item:not(:first-child) {
-  margin-left: 50px;
+
+  @include point-desktop-max {
+    margin-top: 10px;
+  }
+
+  @include point-desktop-min {
+    margin-left: 50px;
+  }
+
 }
 
 .header-contacts__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
-  align-items: center;
   @include font ($fw: 500, $fs: 14px, $lh: 1.14, $ls: 0.03em);
 
   color: $color_primary_text;
@@ -29,6 +41,14 @@
   &:hover,
   &:focus {
     color: $color_accent;
+  }
+
+  @include point-desktop-min {
+    display: flex;
+    align-items: center;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 

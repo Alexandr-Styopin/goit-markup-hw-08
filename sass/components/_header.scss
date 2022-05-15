@@ -7,15 +7,9 @@
 .header__body {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-
-.menu-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .header-logo {
   color: $color_header_logo;

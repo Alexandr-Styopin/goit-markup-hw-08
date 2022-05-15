@@ -1,10 +1,31 @@
 .footer-soc {
-    margin-left: 70px;
+    @include point-tablet-max {
+        margin-top: 60px;
+    }
+
+    @include point-tablet-min {
+        margin-left: auto;
+    }
+
+    @include point-desktop-min {
+        margin-left: 70px;
+    }
+}
+
+.footer-soc__list {
+    @include point-desktop-max {
+        margin-top: 20px;
+    }
 }
 
 .footer-soc__title {
-    padding-top: 12px;
-    margin-bottom: 20px;
+    text-align: center;
+
+    @include point-desktop-min {
+        padding-top: 12px;
+        margin-bottom: 20px;
+    }
+
 
     @include font (700, 14px);
     text-transform: uppercase;

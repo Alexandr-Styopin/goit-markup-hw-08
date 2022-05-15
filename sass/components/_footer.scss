@@ -4,13 +4,32 @@
 
   background-color: $color_footer_bg;
 
-  .footer__wrap {
+}
+
+.footer__wrap {
+  @include point-desktop-min {
     display: inline-flex;
   }
+
+}
+
+.footer__top-wrap {
+  @include point-mobile-min {
+    display: flex;
+  }
+
+
 }
 
 .footer-column__wrap {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include point-desktop-min {
+    display: block;
+  }
+
 }
 
 .footer-logo {
@@ -18,15 +37,38 @@
 }
 
 .footer-address {
-  margin-top: 20px;
+  @include point-desktop-max {
+    margin-top: 20px;
+  }
+
+  @include point-desktop-min {
+    margin-top: 20px;
+  }
 
   font-style: normal;
   line-height: 1.7;
   color: $color_secondary_text;
 }
 
+.footer-contact__list {
+  @include point-desktop-max {
+    margin-top: 8px;
+  }
+}
+
+.footer-contact__item:not(:first-child) {
+  @include point-desktop-max {
+    margin-top: 8px;
+  }
+}
+
 .footer-contact__item {
-  padding-top: 9px;
+
+
+  @include point-desktop-min {
+    padding-top: 9px;
+  }
+
 }
 
 .footer-contact__link {
