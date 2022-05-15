@@ -899,7 +899,7 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media (min-width: 768px) {
   .footer__top-wrap {
     display: -webkit-box;
     display: -ms-flexbox;

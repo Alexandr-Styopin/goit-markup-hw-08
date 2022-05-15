@@ -14,7 +14,7 @@
 }
 
 .footer__top-wrap {
-  @include point-mobile-min {
+  @include point-tablet-min {
     display: flex;
   }
 
