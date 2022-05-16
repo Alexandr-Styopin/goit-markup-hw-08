@@ -51,8 +51,6 @@
   width: 100%;
   height: 100%;
 
-  overflow: scroll;
-
   background-color: $color_overlay_bg;
   transform: translateY(100%);
   transition: transform 250ms $CubicBezier;
@@ -62,7 +60,9 @@
     transform: translateY(0);
   }
 
-
+  @include point-tablet-max {
+    overflow: scroll;
+  }
 }
 
 .examples__text {
