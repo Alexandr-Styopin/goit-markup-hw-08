@@ -1,9 +1,8 @@
 .modal-form {
-  width: 448px;
+
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 
 .modal-form__title {
@@ -23,7 +22,6 @@
   display: block;
   margin-bottom: 4px;
   @include font (null, 12px, 1.16, 0.01em);
-
 }
 
 .form-field__input {
@@ -62,11 +60,7 @@
 .comment-field__label {
   display: block;
   margin-bottom: 4px;
-
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
+  @include font (null, 12px, 1.16, 0.01em);
 }
 
 .comment-field__input {
@@ -104,11 +98,16 @@
 }
 
 .check {
+  position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .check__box {
+  position: absolute;
+  top: 1px;
+  left: 0;
   width: 16px;
   height: 15px;
 
@@ -139,13 +138,12 @@
 }
 
 .check__lable {
-  padding-left: 7px;
+  padding-left: 23px;
+  @include font (null, 12px, 1.71);
 
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-
+  @include point-desktop-min {
+    @include font (null, 14px, 1.16);
+  }
 }
 
 .check__lable-link {
@@ -155,12 +153,10 @@
   &:focus {
     text-decoration: none;
   }
-
 }
 
 .modal__submit-button {
   @extend %button;
   margin: 0 auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
 }

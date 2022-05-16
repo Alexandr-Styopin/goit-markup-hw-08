@@ -15,8 +15,16 @@
     }
 }
 
+
+
 @mixin point-mobile-max {
-    @media (max-width: 480px) {
+    @media (max-width: 479px) {
+        @content;
+    }
+}
+
+@mixin point-height {
+    @media screen and (max-height: 608px) {
         @content;
     }
 }
@@ -42,7 +50,7 @@
 }
 
 @mixin point-desktop-max {
-    @media (max-width: 1200px) {
+    @media (max-width: 1199px) {
         @content;
     }
 }

@@ -6,14 +6,12 @@
     @include point-desktop-min {
         margin-left: 93px;
     }
-
 }
 
 .footer-form__wrap {
     @include point-desktop-min {
         display: flex;
     }
-
 }
 
 .footer-form__field {
@@ -26,7 +24,6 @@
         flex-direction: column;
         align-items: flex-start;
     }
-
 }
 
 .footer-form__label {
@@ -70,8 +67,6 @@
 
         color: $color_footer_form_placeholder;
     }
-
-    @include point-desktop-max {}
 
     @include point-desktop-min {
         width: 358px;

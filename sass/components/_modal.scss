@@ -1,7 +1,10 @@
 // ---backdrop
 .backdrop {
   position: fixed;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
   top: 0;
   left: 0;
   width: 100%;
@@ -15,27 +18,40 @@
     pointer-events: none;
     visibility: hidden;
   }
+
+  @include point-height {
+    align-items: flex-start;
+  }
 }
 
 //--- modal
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: relative;
+  width: 95vw;
+  min-width: 320px;
 
-  width: 528px;
-  min-height: 581px;
+  // min-height: 581px;
+
+  padding: 40px;
 
   border-radius: 4px;
   background-color: $color_primary_bg;
 
-  transform: translate(-50%, -50%) scale(1, 1);
+  transform: scale(1, 1);
   transition: transform 250ms $CubicBezier;
 
   .backdrop.is-hidden & {
-    transform: translate(-50%, -50%) scale(0, 1.5);
+    transform: scale(0, 1.5);
     visibility: visible;
+  }
+
+  @include point-mobile-min {
+    width: 450px;
+  }
+
+  @include point-desktop-min {
+    width: 528px;
   }
 }
 

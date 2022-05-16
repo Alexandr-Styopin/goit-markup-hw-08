@@ -6,6 +6,8 @@
   }
 }
 
+
+
 .examples__item {
   margin-top: 30px;
 
@@ -36,13 +38,20 @@
   overflow: hidden;
 }
 
+.examples__img {
+  @include point-mobile-max {
+    width: 100%;
+  }
+}
+
 .examples__overlay {
   position: absolute;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 100%;
+
+  overflow: scroll;
 
   background-color: $color_overlay_bg;
   transform: translateY(100%);
@@ -52,20 +61,21 @@
   .examples__link:focus & {
     transform: translateY(0);
   }
+
+
 }
-
-
 
 .examples__text {
   position: absolute;
-  width: 322px;
+  width: 100%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
 
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  transform: translate(-50%, -50%);
+  @include font (null, 18px, 1.65);
   color: $color_secondary_text;
 }
 

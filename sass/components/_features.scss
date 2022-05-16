@@ -4,7 +4,6 @@
     flex-wrap: wrap;
     margin: -15px;
   }
-
 }
 
 .features__item {
@@ -16,14 +15,12 @@
   @include point-tablet-min {
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
-
   }
 
   @include point-desktop-min {
     width: calc((100% - 4 * 30px) / 4);
     margin: 15px;
   }
-
 }
 
 .features__icon {

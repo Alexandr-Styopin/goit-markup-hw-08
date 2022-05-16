@@ -1,4 +1,9 @@
 .footer-soc {
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 89px;
+    }
+
     @include point-tablet-max {
         margin-top: 60px;
     }

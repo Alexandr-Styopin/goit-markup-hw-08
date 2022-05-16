@@ -21,17 +21,24 @@
       <div class="container">
         <div class="header__body">
           <a class="logo" href="./index.html">Web<span class="header-logo">Studio</span></a>
-          <nav class="nav-menu">
-            <ul class="nav-menu__list list">
-              <li class="nav-menu__item">
-                <a class="nav-menu__link link" href="./index.html">Студия </a>
+
+          <button class="menu__open-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="menu__icon-open" width="40px" height="40px">
+              <use href="./images/icons.svg#icon-mob_open_menu"></use>
+            </svg>
+          </button>
+
+          <nav class="header-nav">
+            <ul class="header-nav__list list">
+              <li class="header-nav__item">
+                <a class="header-nav__link link" href="./index.html">Студия </a>
               </li>
-              <li class="nav-menu__item">
-                <a class="nav-menu__link link activ" href="./portfolio.html">Портфолио
+              <li class="header-nav__item">
+                <a class="header-nav__link link" href="./portfolio.html">Портфолио
                 </a>
               </li>
-              <li class="nav-menu__item">
-                <a class="nav-menu__link link" href="">Контакты </a>
+              <li class="header-nav__item">
+                <a class="header-nav__link link" href="">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -57,6 +64,7 @@
           </div>
         </div>
       </div>
+
     </header>
     <main>
       <section class="section filter">
@@ -86,7 +94,21 @@
             <li class="examples__item">
               <a href="" class="examples__link link">
                 <div class="examples__thumb">
-                  <img class="examples__img" src="./images/project-img1.jpg" alt="Технокряк" width="370" height="294" />
+                  <picture>
+                    <source srcset="
+                                                    ./images/examples/examples_1-desktop-1x-min.jpg 1x, 
+                                                    ./images/examples/examples_1-desktop-2x-min.jpg 2x"
+                      media="(min-width: 1200px)" />
+                    <source srcset="
+                                                    ./images/examples/examples_1-tab-1x-min.jpg  1x, 
+                                                    ./images/examples/examples_1-tab-2x-min.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source srcset="
+                                                    ./images/examples/examples_1-mob-1x-min.jpg 1x, 
+                                                    ./images/examples/examples_1-mob-2x-min.jpg 2x"
+                      media="(min-width: 320px)" />
+                    <img class="examples__img" src="./images/examples/examples_1-mob-1x-min.jpg" alt="Технокряк" />
+                  </picture>
                   <div class="examples__overlay">
                     <p class="examples__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -105,7 +127,21 @@
             <li class="examples__item">
               <a href="" class="examples__link link">
                 <div class="examples__thumb">
-                  <img class="examples__img" src="./images/project-img2.jpg" alt="Технокряк" width="370" height="294" />
+                  <picture>
+                    <source srcset="
+                                                    ./images/examples/examples_2-desktop-1x-min.jpg 1x, 
+                                                    ./images/examples/examples_2-desktop-2x-min.jpg 2x"
+                      media="(min-width: 1200px)" />
+                    <source srcset="
+                                                    ./images/examples/examples_2-tab-1x-min.jpg  1x, 
+                                                    ./images/examples/examples_2-tab-2x-min.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source srcset="
+                                                    ./images/examples/examples_2-mob-1x-min.jpg 1x, 
+                                                    ./images/examples/examples_2-mob-2x-min.jpg 2x"
+                      media="(min-width: 320px)" />
+                    <img class="examples__img" src="./images/examples/examples_2-mob-1x-min.jpg" alt="Постер" />
+                  </picture>
                   <div class="examples__overlay">
                     <p class="examples__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -126,7 +162,21 @@
             <li class="examples__item">
               <a href="" class="examples__link link">
                 <div class="examples__thumb">
-                  <img class="examples__img" src="./images/project-img3.jpg" alt="Технокряк" width="370" height="294" />
+                  <picture>
+                    <source srcset="
+                                                    ./images/examples/examples_3-desktop-1x-min.jpg 1x, 
+                                                    ./images/examples/examples_3-desktop-2x-min.jpg 2x"
+                      media="(min-width: 1200px)" />
+                    <source srcset="
+                                                    ./images/examples/examples_3-tab-1x-min.jpg  1x, 
+                                                    ./images/examples/examples_3-tab-2x-min.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source srcset="
+                                                    ./images/examples/examples_3-mob-1x-min.jpg 1x, 
+                                                    ./images/examples/examples_3-mob-2x-min.jpg 2x"
+                      media="(min-width: 320px)" />
+                    <img class="examples__img" src="./images/examples/examples_3-mob-1x-min.jpg" alt="Ресторан" />
+                  </picture>
                   <div class="examples__overlay">
                     <p class="examples__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -145,7 +195,21 @@
             <li class="examples__item">
               <a href="" class="examples__link link">
                 <div class="examples__thumb">
-                  <img class="examples__img" src="./images/project-img4.jpg" alt="Технокряк" width="370" height="294" />
+                  <picture>
+                    <source srcset="
+                                                    ./images/examples/examples_4-desktop-1x-min.jpg 1x, 
+                                                    ./images/examples/examples_4-desktop-2x-min.jpg 2x"
+                      media="(min-width: 1200px)" />
+                    <source srcset="
+                                                    ./images/examples/examples_4-tab-1x-min.jpg  1x, 
+                                                    ./images/examples/examples_4-tab-2x-min.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source srcset="
+                                                    ./images/examples/examples_4-mob-1x-min.jpg 1x, 
+                                                    ./images/examples/examples_4-mob-2x-min.jpg 2x"
+                      media="(min-width: 320px)" />
+                    <img class="examples__img" src="./images/examples/examples_4-mob-1x-min.jpg" alt="Проект" />
+                  </picture>
                   <div class="examples__overlay">
                     <p class="examples__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -166,15 +230,18 @@
                 <div class="examples__thumb">
                   <picture>
                     <source srcset="
-                      ./images/examples/examples_1-desktop-1x-min 1x.jpg, 
-                      ./images/examples/examples_1-desktop-2x-min 2x.jpg" media="(min-width: 1200px)" />
+                                                  ./images/examples/examples_5-desktop-1x-min.jpg 1x, 
+                                                  ./images/examples/examples_5-desktop-2x-min.jpg 2x"
+                      media="(min-width: 1200px)" />
                     <source srcset="
-                      ./images/examples/examples_1-tab-1x-min 1x.jpg, 
-                      ./images/examples/examples_1-tab-2x-min 2x.jpg" media="(min-width: 768px)" />
+                                                  ./images/examples/examples_5-tab-1x-min.jpg  1x, 
+                                                  ./images/examples/examples_5-tab-2x-min.jpg 2x"
+                      media="(min-width: 768px)" />
                     <source srcset="
-                      ./images/examples/examples_1-mob-1x-min 1x.jpg, 
-                      ./images/examples/examples_1-mob-2x-min 2x.jpg" media="(min-width: 480px)" />
-                    <img class="examples__img" src="./images/examples/examples_1-mob-1x-min.jpg" alt="Технокряк" />
+                                                  ./images/examples/examples_5-mob-1x-min.jpg 1x, 
+                                                  ./images/examples/examples_5-mob-2x-min.jpg 2x"
+                      media="(min-width: 320px)" />
+                    <img class="examples__img" src="./images/examples/examples_5-mob-1x-min.jpg" alt="Проект" />
                   </picture>
                   <div class="examples__overlay">
                     <p class="examples__text">
@@ -194,7 +261,21 @@
             <li class="examples__item">
               <a href="" class="examples__link link">
                 <div class="examples__thumb">
-                  <img class="examples__img" src="./images/project-img6.jpg" alt="Технокряк" width="370" height="294" />
+                  <picture>
+                    <source srcset="
+                                                  ./images/examples/examples_6-desktop-1x-min.jpg 1x, 
+                                                  ./images/examples/examples_6-desktop-2x-min.jpg 2x"
+                      media="(min-width: 1200px)" />
+                    <source srcset="
+                                                  ./images/examples/examples_6-tab-1x-min.jpg  1x, 
+                                                  ./images/examples/examples_6-tab-2x-min.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source srcset="
+                                                  ./images/examples/examples_6-mob-1x-min.jpg 1x, 
+                                                  ./images/examples/examples_6-mob-2x-min.jpg 2x"
+                      media="(min-width: 320px)" />
+                    <img class="examples__img" src="./images/examples/examples_6-mob-1x-min.jpg" alt="Inspiration" />
+                  </picture>
                   <div class="examples__overlay">
                     <p class="examples__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -213,7 +294,21 @@
             <li class="examples__item">
               <a href="" class="examples__link link">
                 <div class="examples__thumb">
-                  <img class="examples__img" src="./images/project-img7.jpg" alt="Технокряк" width="370" height="294" />
+                  <picture>
+                    <source srcset="
+                                                    ./images/examples/examples_7-desktop-1x-min.jpg 1x, 
+                                                    ./images/examples/examples_7-desktop-2x-min.jpg 2x"
+                      media="(min-width: 1200px)" />
+                    <source srcset="
+                                                    ./images/examples/examples_7-tab-1x-min.jpg  1x, 
+                                                    ./images/examples/examples_7-tab-2x-min.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source srcset="
+                                                    ./images/examples/examples_7-mob-1x-min.jpg 1x, 
+                                                    ./images/examples/examples_7-mob-2x-min.jpg 2x"
+                      media="(min-width: 320px)" />
+                    <img class="examples__img" src="./images/examples/examples_7-mob-1x-min.jpg" alt="Издание" />
+                  </picture>
                   <div class="examples__overlay">
                     <p class="examples__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -232,7 +327,21 @@
             <li class="examples__item">
               <a href="" class="examples__link link">
                 <div class="examples__thumb">
-                  <img class="examples__img" src="./images/project-img8.jpg" alt="Технокряк" width="370" height="294" />
+                  <picture>
+                    <source srcset="
+                                                    ./images/examples/examples_8-desktop-1x-min.jpg 1x, 
+                                                    ./images/examples/examples_8-desktop-2x-min.jpg 2x"
+                      media="(min-width: 1200px)" />
+                    <source srcset="
+                                                    ./images/examples/examples_8-tab-1x-min.jpg  1x, 
+                                                    ./images/examples/examples_8-tab-2x-min.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source srcset="
+                                                    ./images/examples/examples_8-mob-1x-min.jpg 1x, 
+                                                    ./images/examples/examples_8-mob-2x-min.jpg 2x"
+                      media="(min-width: 320px)" />
+                    <img class="examples__img" src="./images/examples/examples_8-mob-1x-min.jpg" alt="Проект LAB" />
+                  </picture>
                   <div class="examples__overlay">
                     <p class="examples__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -251,7 +360,21 @@
             <li class="examples__item">
               <a href="" class="examples__link link">
                 <div class="examples__thumb">
-                  <img class="examples__img" src="./images/project-img9.jpg" alt="Технокряк" width="370" height="294" />
+                  <picture>
+                    <source srcset="
+                                                    ./images/examples/examples_9-desktop-1x-min.jpg 1x, 
+                                                    ./images/examples/examples_9-desktop-2x-min.jpg 2x"
+                      media="(min-width: 1200px)" />
+                    <source srcset="
+                                                    ./images/examples/examples_9-tab-1x-min.jpg  1x, 
+                                                    ./images/examples/examples_9-tab-2x-min.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source srcset="
+                                                    ./images/examples/examples_9-mob-1x-min.jpg 1x, 
+                                                    ./images/examples/examples_9-mob-2x-min.jpg 2x"
+                      media="(min-width: 320px)" />
+                    <img class="examples__img" src="./images/examples/examples_9-mob-1x-min.jpg" alt="Приложение" />
+                  </picture>
                   <div class="examples__overlay">
                     <p class="examples__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -271,7 +394,57 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu__close-btn menu-toggle js-close-menu">
+        <svg class="menu__icon-close" width="40px" height="40px">
+          <use href="./images/icons.svg#icon-mob_close_menu"></use>
+        </svg>
+      </button>
+      <div class="menu-nav">
+        <ul class="menu-nav__list list">
+          <li class="menu-nav__item">
+            <a class="menu-nav__link link" href="./index.html">Студия</a>
+          </li>
+          <li class="menu-nav__item">
+            <a class="menu-nav__link link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="" class="menu-nav__link link">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu-bottom">
+        <div class="menu-contacts">
+          <ul class="menu-contacts__list list">
+            <li class="menu-contacts__item">
+              <a class="menu-contacts__tel-link link" href="tel:+380961111111">+380961111111</a>
+            </li>
+            <li class="menu-contacts__item">
+              <a class="menu-contacts__mail-link link" href="mailto:info@devstudio.com">info@devstudio.com"</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-soc">
+          <ul class="menu-soc__list list">
+            <li class="menu-soc__item">
+              <a class="menu-soc__link link" href="">Instagram</a>
+            </li>
+            <li class="menu-soc__item">
+              <a class="menu-soc__link link" href="">Twitter</a>
+            </li>
+            <li class="menu-soc__item">
+              <a class="menu-soc__link link" href="">Facebook</a>
+            </li>
+            <li class="menu-soc__item">
+              <a class="menu-soc__link link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
       <div class="container">
         <div class="footer__wrap">
           <div class="footer-column__wrap">
@@ -344,7 +517,12 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
+
   </body>
 
 </html>
