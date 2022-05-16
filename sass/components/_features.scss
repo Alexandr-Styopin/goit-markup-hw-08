@@ -1,8 +1,16 @@
 .features__list {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   @include point-tablet-min {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
+  }
+
+  @include point-desktop-min {
+    padding-top: 94px;
+    padding-bottom: 0;
   }
 }
 
