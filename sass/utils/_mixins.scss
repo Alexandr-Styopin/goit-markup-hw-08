@@ -16,7 +16,6 @@
 }
 
 
-
 @mixin point-mobile-max {
     @media (max-width: 479px) {
         @content;

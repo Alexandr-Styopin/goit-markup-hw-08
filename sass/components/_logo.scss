@@ -3,8 +3,7 @@
   text-decoration: none;
   font-family: $font_logo;
   color: $color_loro;
-  // padding-top: 16px;
-  // padding-bottom: 16px;
+
 
   @include point-desktop-min {
     @include font (700, 26px, 1.19);

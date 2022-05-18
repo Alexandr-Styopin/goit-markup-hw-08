@@ -110,11 +110,15 @@ body {
 }
 
 .header {
-  padding-top: 10px;
-  padding-bottom: 10px;
   border: 1px rgb(236, 236, 236);
   border-style: none none solid none;
   background-color: #ffffff;
+}
+@media (max-width: 767px) {
+  .header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .header__body {
