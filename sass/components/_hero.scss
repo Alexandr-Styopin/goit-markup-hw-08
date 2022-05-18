@@ -64,7 +64,7 @@
   margin: 0 auto;
   text-align: center;
 
-  @include font (900, 26px, 1.62, 0.06);
+  @include font (900, 26px, 1.62, 0.06em);
   text-transform: uppercase;
   color: $calor_hero_title;
 

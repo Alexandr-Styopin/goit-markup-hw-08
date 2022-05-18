@@ -110,6 +110,8 @@ body {
 }
 
 .header {
+  padding-top: 10px;
+  padding-bottom: 10px;
   border: 1px rgb(236, 236, 236);
   border-style: none none solid none;
   background-color: #ffffff;
@@ -500,7 +502,7 @@ body {
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
-  letter-spacing: 0.06;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
 }
