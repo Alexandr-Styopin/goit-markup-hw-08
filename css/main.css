@@ -563,6 +563,12 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .features__item:not(:first-child) {
+    padding-top: 30px;
+  }
+}
+
 .features__icon {
   display: -webkit-box;
   display: -ms-flexbox;
