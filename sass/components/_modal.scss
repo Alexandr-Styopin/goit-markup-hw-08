@@ -38,11 +38,13 @@
   border-radius: 4px;
   background-color: $color_primary_bg;
 
-  transform: scale(1, 1);
+
+  transform: translateY(0);
   transition: transform 250ms $CubicBezier;
 
   .backdrop.is-hidden & {
-    transform: scale(0, 1.5);
+
+    transform: translateY(100%);
     visibility: visible;
   }
 
@@ -67,6 +69,7 @@
 
   width: 30px;
   height: 30px;
+
   border-radius: 50px;
   border: 1px solid $color_close_btn_border;
   fill: $color_close_btn;

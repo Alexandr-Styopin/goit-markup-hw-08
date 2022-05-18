@@ -1,8 +1,12 @@
 .logo {
+  @include font (700, 24px, 1.6);
   text-decoration: none;
   font-family: $font_logo;
-  @include font (700, 26px, 1.19);
   color: $color_loro;
+
+  @include point-desktop-min {
+    @include font (700, 26px, 1.19);
+  }
 }
 
 .logo--colorize-black {

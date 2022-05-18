@@ -1,5 +1,12 @@
 .title {
-    @include font (700, 36px, 1, 16);
+    @include font (700, 28px, 1.7);
     text-align: center;
     color: $color_title;
+
+
+    @include point-desktop-min {
+        @include font (700, 36px, 1.16);
+
+    }
+
 }

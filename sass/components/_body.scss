@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: $font_primary;
-  @include font ();
+  @include font (null, 14px, 1.14, 0.03em);
   background-color: $color_primary_bg;
 
 
